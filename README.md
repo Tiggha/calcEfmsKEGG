@@ -1,4 +1,4 @@
-# Name
+# calcEfmsKEGG
 This program downloads models from KEGG database, converts KGML files to SBML and enumerates EFMs in metabolic models.
 
 ## Requirements:

@@ -484,6 +484,7 @@ if __name__ == "__main__":
         parser.error("--file requires --method.")
 
     if args.file and args.method == "efmtool":
+        e._safety_checks()
         e._checkForReactions(MODEL)
 
         e._create_dir_for_model()
