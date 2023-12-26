@@ -446,7 +446,7 @@ args = parser.parse_args()
 
 if __name__ == "__main__":
     e = efms()
-    # e._calc_efms_efmtool("models/tca.sbml.xml")
+    e._safety_checks()
 
     if args.singlemodel:
         e._getKGML(args.singlemodel)
@@ -484,7 +484,7 @@ if __name__ == "__main__":
         parser.error("--file requires --method.")
 
     if args.file and args.method == "efmtool":
-        e._safety_checks()
+        
         e._checkForReactions(MODEL)
 
         e._create_dir_for_model()
